@@ -48,7 +48,7 @@ const Interests = () => {
                     </h2>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
                     {interests.map((item, index)=>(
                         <div key={index} 
                         className="p-8 border border-white/10 hover:border-purple-400 transition-colors group">

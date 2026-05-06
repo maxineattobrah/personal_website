@@ -11,12 +11,12 @@ const About = () => {
                             About Me
                         </div>
                         <h2 className="text-5xl lg:text-6xl font-bold mb-8 leading tight text-white">
-                            I help in creating the digital future.
+                            I create the digital future.
                         </h2>
                         <div className="space-y-6 text-lg text-gray-400 leading-relaxed">
                             <p>
                                 Hello! I am Maxine, a full-stack AI/ML engineer with a passion for creating
-                                beautiful, intelligent systems. My journey began in the aviation
+                                aesthetically pleasing, intelligent systems. My journey began in the aviation
                                 industry developing and testing flight controls algorithms to make it 
                                 easier for pilots to fly military helicopters.
                             </p>
@@ -24,6 +24,9 @@ const About = () => {
                                 Today, I build production-ready AI applications for consumers and government agencies
                                 that combine technical excellence with exceptional user experience. I believe the future of
                                 AI is not just about powerful models, but about interfaces that feel intuitive and tools that are ethical.
+                            </p>
+                            <p>
+                                With Maxine being the feminine form of Maximus, meaning “greatest”, “bright”, or “noble” in Roman, I was born into a declaration of greatness that I am dedicated to fulfilling.
                             </p>
                         </div>
                     </div>
