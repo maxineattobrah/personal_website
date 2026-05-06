@@ -15,10 +15,10 @@ const MyBook = () => {
                 </div>
                 <div className="grid lg:grid-cols-2 gap-20 items-center">
                     <div className="relative">
-                        <div className="aspect-[2/3] max-w-md mx-auto rounded-lg shadow-2xl p-12 flex flex-col justify-between">
+                        <div className="aspect-[2/3] max-w-md mx-auto rounded-lg shadow-2xl p-12 flex flex-col justify-between overflow-hidden">
                             <img
                                 src={bookImg}
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-contain"
                             />
                         </div>
         
@@ -28,8 +28,22 @@ const MyBook = () => {
                 <div className="space-y-6 text-lg text-gray-700 leading-relaxed mb-12">
                 <p>
                     In today's world, understanding data analytics, data science, and artificial intelligence is not just an advantage but a necessity. 
-                    This book is your thorough guide to learning these innovative fields. It is designed to make learning these topics practical and engaging.
+                    This book is your thorough guide to learning these innovative fields. It is designed to make learning these topics practical and engaging by
+                    offering real-world examples and code you can experiment with on your own.
                 </p>
+            <div className="mb-8 p-4 bg-amber-50 border-1-4 border-amber-500 rounded">
+                <p className="text-sm text-gray-700">
+                    <span className="font-semibold text-amber-700">🏆 Amazon Bestseller</span>
+                    <p  className="mt-1 ml-6">
+                    Featured on Amazon's bestseller lists 3 times in:
+                    </p>
+                    <ul className="ml-8 list-disc list-inside">
+                        <li>Artificial Intelligence</li>
+                        <li>Database Storage & Design</li>
+                        <li>Statistics</li>
+                    </ul>
+                </p>
+            </div>
             </div>
                 <div className="text-4xl font-bold mb-2">2024</div>
                 <div className="text-sm text-gray-600">Published</div>
