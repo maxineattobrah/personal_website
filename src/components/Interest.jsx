@@ -55,7 +55,7 @@ const Interests = () => {
                             <div className="text-5xl mb-6 group-hover:scale-110 transition-transform inline-block">
                                 {item.icon}
                             </div>
-                            <h3 className="text-2xl font-bold mb-3 text-white">{item.title}</h3>
+                            <h3 className="text-2xl font-bold mb-3 text-white p-1">{item.title}</h3>
                             <p className="text-gray-400">{item.description}</p>
 
                         </div>
