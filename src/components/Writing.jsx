@@ -20,9 +20,13 @@ const Writing = () =>{
             const data = await response.json();
 
             if(data.status === "ok"){
-                // get latest 3 articles
-                console.log(data);
-                const lastestArticles = data.items.slice(0,3).map(item =>({
+                // titles of selected articles
+                const pinnedTitles = [
+                    "5 Must-Know Python Libraries for Machine Learning: A Guide for Beginners",
+                    "11 Ways to Evaluate Machine Learning Models You Should Know",
+                ];
+
+                const pinnedArticles = data.items.filter(item => pinnedTitles.includes(item.title)).map(item =>({
                     title: item.title,
                     link: item.link,
                     description: item.description
@@ -32,7 +36,23 @@ const Writing = () =>{
                     thumbnail: item.thumbnail || extractFirstImage(item.content),
                 }));
 
-                setArticles(lastestArticles);
+                console.log(pinnedArticles);
+
+                setArticles(pinnedArticles);
+
+
+                   // get latest 3 articles
+                // const lastestArticles = data.items.slice(0,3).map(item =>({
+                //     title: item.title,
+                //     link: item.link,
+                //     description: item.description
+                //     .replace(/<[^>]*>/g,'').substring(
+                //         0,50
+                //     )+'...',
+                //     thumbnail: item.thumbnail || extractFirstImage(item.content),
+                // }));
+
+                // setArticles(lastestArticles);
             }
 
         }catch(e){
@@ -69,10 +89,10 @@ const Writing = () =>{
                         Writing
                     </div>
                     <h2 className="text-5xl lg:text-6xl font-bold mb-4 text-white">
-                        Latest Articles 
+                        Selected Articles 
                     </h2>
                     <p className="text-gray-400 text-lg">
-
+                        My thoughts on AI/ML engineering and building intelligent systems.
                     </p>
                 </div>
                 <div className="max-w-4xl">
