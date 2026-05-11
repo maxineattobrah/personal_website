@@ -7,6 +7,7 @@ import Education from './components/Education'
 import TechnicalSkills from './components/Skills'
 import Interests from './components/Interest'
 import Work from './components/Work'
+import Writing from './components/Writing'
 
 
 import '/Users/myplayhouse/Documents/GitHub/personal_website/src/index.css'
@@ -64,6 +65,7 @@ function App() {
       <Education/>
       <TechnicalSkills/>
       <MyBook/>
+      <Writing/>
       <Interests/>
       <Contact/>
       </div>
